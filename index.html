@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <!-- Ícone -->
+    <link rel="icon" href="img/favicon.png" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+
+    <!-- Estilo Customizado -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Fonte -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Viagem ao futuro - 2220</title>
+  </head>
+  <body>
+    <!-- Início Header -->
+    <section id="cabecalho">
+      <div class="container text-center mt-1 custom-header font-weight-bold">
+        <h1 class="h1-custom efeito">Hello World!</h1>
+        <p class="data-custom efeito">Estamos no ano de 2220...</p>
+        <p class="display-4 efeito">
+          Você tem direito de escolher apenas um objeto para trazer ao futuro
+        </p>
+      </div>
+    </section>
+
+    <!-- Seção objeto -->
+    <section id="objeto">
+      <div class="container mb-3 text-center">
+        <h2>Objeto escolhido:</h2>
+        <a
+          href="https://quenotebookcomprar.com.br/notebook-que-carrega-sol-energia-solar-existe-veja-detalhes/"
+          target="_blank"
+        >
+          <figure>
+            <img
+              class="img-fluid"
+              src="img/laptop-solar.png"
+              alt="Laptop com painel solar"
+              width="230"
+            />
+            <figcaption>Laptop com painel solar</figcaption>
+          </figure>
+        </a>
+      </div>
+    </section>
+
+    <!-- Seção Motivo -->
+    <section id="motivo">
+      <div class="container text-center">
+        <h3>Motivo:</h3>
+        <p>
+          Após pensar muito, eu levaria um laptop com recarga através de energia
+          solar. Se há vida no futuro, há sol, a estrela que mantém essa vida, a
+          funcionalidade do planeta. Com esse pensamento, busco a autonomia da
+          bateria desse laptop.
+        </p>
+        <p>
+          Seria uma forma de ter comigo as memórias armazenadas no meu laptop,
+          fotos da minha família, meus projetos, meus amigos...
+        </p>
+        <p>
+          Teria acesso a todas as notícias de anos anteriores, pra me atualizar
+          das coisas que aconteceram e estão acontecendo no mundo. Além de ser
+          uma forma de armazenar todo conhecimento que posso adquirir no futuro,
+          ter fotos, novas tecnologias e previsões sobre o que o futuro nos
+          reserva (talvez a cura do corona vírus).
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p class="text-center font-weight-bold footer-custom mb-3">
+          Se quiser entrar em contato para saber o que descobri no futuro,
+          acesse minhas redes sociais:
+        </p>
+        <!-- Redes Sociais -->
+        <div class="d-flex justify-content-center backgound-custom">
+          <a target="_blank" href="https://github.com/Danilmendes">
+            <i class="fab fa-github-square fa-3x"></i>
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/danilomf/">
+            <i class="fab fa-linkedin fa-3x"></i>
+          </a>
+          <a target="_blank" href="mailto: danilmendes@gmail.com">
+            <i class="fas fa-envelope-square fa-3x"></i>
+          </a>
+
+          <!-- Direitos Autorais  -->
+        </div>
+        <p class="text-center mt-4 font-weight-bold">
+          &copy; Created by Danilo Mendes, All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- Script de animação do hello world -->
+
+    <script>
+      function typeWriter(elemento) {
+        const textoArray = elemento.innerHTML.split("");
+        elemento.innerHTML = "";
+        textoArray.forEach((letra, i) => {
+          setTimeout(function () {
+            elemento.innerHTML += letra;
+          }, 75 * i);
+        });
+      }
+
+      const titulo = document.querySelector(".efeito");
+      typeWriter(titulo);
+    </script>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
